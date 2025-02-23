@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="body">
+<header class="header">
+    <p>Калькулятор для розрахунку складу сухої та горючої маси палива та
+        нижчої теплоти згоряння для робочої, сухої та горючої маси</p>
+</header>
+
+<div class="container">
+    <div class="container-input">
+        <label>Вміст вуглецю (%): <input type="number" id="C" step="0.01" placeholder="Введіть значення"></label>
+        <label>Вміст водню (%): <input type="number" id="H" step="0.01" placeholder="Введіть значення"></label>
+        <label>Вміст кисню (%): <input type="number" id="O" step="0.01" placeholder="Введіть значення"></label>
+        <label>Вміст сірки (%): <input type="number" id="S" step="0.01" placeholder="Введіть значення"></label>
+        <label>Нижча теплота згоряння (МДж/кг): <input type="number" id="Q" step="0.01" placeholder="Введіть значення"></label>
+        <label>Вологість робочої маси палива (%): <input type="number" id="W" step="0.01" placeholder="Введіть значення"></label>
+        <label>Зольність сухої маси (%): <input type="number" id="A" step="0.01" placeholder="Введіть значення"></label>
+        <label>Вміст ванадію (мг/кг): <input type="number" id="V" step="0.01" placeholder="Введіть значення"></label>
+        <button onclick="calculate()">Розрахувати</button>
+    </div>
+
+    <div class="container-result" id="result-container">
+        <h4>Результати обчислень:</h4>
+        <p id="result"></p>
+    </div>
+</div>
+
+<script src="math.js"></script>
+</body>
+</html>
