@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Завдання 1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="body">
+<header class="header">
+  <p>Веб-калькулятор для розрахунку валових викидів шкідливих речовин</p>
+</header>
+
+<div class="container">
+  <div class="container-input">
+    <label>Тип палива:
+      <select id="fuelType" onchange="updateFuelTypes()">
+        <option value="coal">Вугілля</option>
+        <option value="mazut">Мазут</option>
+        <option value="gas">Природний газ</option>
+      </select>
+    </label>
+
+    <label>Вид палива:
+      <select id="fuelSubtype"></select>
+    </label>
+
+    <label>Кількість (т або м³ для газу):
+      <input type="number" id="fuelAmount" step="0.01" placeholder="Введіть значення">
+    </label>
+
+    <button onclick="calculateEmissions()">Розрахувати</button>
+  </div>
+
+  <div class="container-result" id="result-container">
+    <h4>Результати обчислень:</h4>
+    <p id="result"></p>
+  </div>
+</div>
+
+<script src="calculations.js"></script>
+</body>
+</html>
