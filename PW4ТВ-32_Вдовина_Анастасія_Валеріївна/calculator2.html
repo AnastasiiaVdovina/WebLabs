@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Однофазне КЗ</title>
+  <link rel="stylesheet" href="calculators_styles.css">
+</head>
+<body class="body">
+<header class="header">
+  <p>Калькулятор однофазного короткого замикання (3 режими)</p>
+</header>
+
+<div class="container">
+  <div class="container-input">
+    <label for="u2">Напруга U (кВ):</label>
+    <input type="number" id="u2" placeholder="Введіть напругу">
+
+    <label for="mode">Оберіть режим:</label>
+    <select id="mode">
+      <option value="norm">Нормальний</option>
+      <option value="min">Мінімальний</option>
+      <option value="emerg">Аварійний</option>
+    </select>
+
+    <label for="z">Повний опір Z (Ом):</label>
+    <input type="number" id="z" placeholder="Введіть опір">
+
+    <button onclick="calculate2()">Розрахувати</button>
+  </div>
+
+  <div class="container-result" id="result-container2">
+    <h4>Результати обчислень:</h4>
+    <p id="result2"></p>
+  </div>
+</div>
+
+<script src="calculations.js"></script>
+</body>
+</html>

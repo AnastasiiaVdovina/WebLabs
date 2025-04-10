@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Перевірка стійкості</title>
+    <link rel="stylesheet" href="calculators_styles.css">
+</head>
+<body class="body">
+<header class="header">
+    <p>Перевірка термічної та динамічної стійкості кабелю</p>
+</header>
+
+<div class="container">
+    <div class="container-input">
+        <label for="Ik3">Струм КЗ I(k) (кА):</label>
+        <input type="number" id="Ik3" placeholder="Введіть значення">
+
+        <label for="tk">Час протікання струму (с):</label>
+        <input type="number" id="tk" placeholder="Введіть значення">
+
+        <label for="S">Переріз кабелю S (мм²):</label>
+        <input type="number" id="S" placeholder="Введіть значення">
+
+        <button onclick="calculate3()">Розрахувати</button>
+    </div>
+
+    <div class="container-result" id="result-container3">
+        <h4>Результати обчислень:</h4>
+        <p id="result3"></p>
+    </div>
+</div>
+
+<script src="calculations.js"></script>
+</body>
+</html>

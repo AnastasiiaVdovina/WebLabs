@@ -1,0 +1,64 @@
+/* Заголовок сайту */
+.header {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, #8099c1, #2b49a1);
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 80px;
+    font-family: Arial, serif;
+    font-weight: bold;
+}
+
+.header p {
+    padding-left: 150px;
+}
+
+/* Основні налаштування тіла сторінки */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
+}
+
+/* Основна частина з заголовком і кнопками */
+.main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Заголовок перед кнопками */
+.title {
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #4a66a3;
+}
+
+/* Контейнер для кнопок */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Кнопки-калькулятори */
+.choice_button {
+    padding: 15px 25px;
+    background-color: #5c78b6;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ефект збільшення при наведенні */
+.choice_button:hover {
+    background-color: #4a66a3;
+    transform: scale(1.05);
+}

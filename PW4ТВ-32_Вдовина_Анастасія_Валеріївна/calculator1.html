@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Трифазне КЗ</title>
+    <link rel="stylesheet" href="calculators_styles.css">
+</head>
+<body class="body">
+<header class="header">
+    <p>Калькулятор струму трифазного короткого замикання</p>
+</header>
+
+<div class="container">
+    <div class="container-input">
+        <label for="u">Напруга, U (кВ):</label>
+        <input type="number" id="u" placeholder="Введіть значення">
+
+        <label for="z">Повний опір кола, Z (Ом):</label>
+        <input type="number" id="z" placeholder="Введіть значення">
+
+        <button onclick="calculate1()">Розрахувати</button>
+    </div>
+
+    <div class="container-result" id="result-container">
+        <h4>Результати обчислень:</h4>
+        <p id="result"></p>
+    </div>
+</div>
+
+<script src="calculations.js"></script>
+</body>
+</html>
